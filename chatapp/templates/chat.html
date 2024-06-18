@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-xHTldFnJbTq4GizsJolDGBZNGj7LTVJNnEw3zE3P1nciJUc6BToJkO9VJcE/v2Njtl5L9DdFf3GajCzr2a/7AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Chat Room</h1>
+    <div id="messages"></div>
+    <div>
+        <input type="text" id="message" autocomplete="off">
+        <button id="send">Send</button>
+    </div>
+</body>
+</html>
